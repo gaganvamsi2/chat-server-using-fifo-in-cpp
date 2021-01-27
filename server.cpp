@@ -22,12 +22,11 @@ int main(){
   while(1){
     if((sz=read(fd,buff,len))>0){
       string s(buff);
-      cout<<s<<"  message recieved"<<endl;
+      cout<<s<<endl;
 
       int pos = s.find(":");
       string in=s.substr(0,pos);
       int f=stoi(in);
-     cout<<"sent by "<<f<<"th   client "<<endl;
       for(int i=1;i<=clients;i++){
         string fi="/tmp/"+to_string(i);
         if(i!=f){

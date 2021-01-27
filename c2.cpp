@@ -32,7 +32,6 @@ else{
   string s="";
   getline(cin,s);
   if(s.length()>0){
-  cout<<"your message:"<<s<<endl;
   s=to_string(id) +":"+s;
 
    char *buff=&s[0];
