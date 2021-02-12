@@ -1,5 +1,6 @@
 # chat server using fifo in cpp
  chat server and client programs in cpp
+ if anyone client sends a message it is sent to all other clients
 
 execute these commands in terminal 
 
